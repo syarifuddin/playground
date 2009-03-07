@@ -1,0 +1,39 @@
+<h1>New sale</h1>
+
+<% form_for(@sale) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :sale_type %><br />
+    <%= f.text_field :sale_type %>
+  </p>
+  <p>
+    <%= f.label :land_size %><br />
+    <%= f.text_field :land_size %>
+  </p>
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label :rooms %><br />
+    <%= f.text_field :rooms %>
+  </p>
+  <p>
+    <%= f.label :sale_price %><br />
+    <%= f.text_field :sale_price %>
+  </p>
+  <p>
+    <%= f.label :suburb %><br />
+    <%= f.text_field :suburb %>
+  </p>
+  <p>
+    <%= f.label :date %><br />
+    <%= f.date_select :date %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', sales_path %>

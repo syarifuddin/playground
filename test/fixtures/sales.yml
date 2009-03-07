@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  sale_type: MyString
+  land_size: 1
+  address: MyString
+  rooms: 1
+  sale_price: 1
+  suburb: MyString
+  date: 2009-03-04
+
+two:
+  sale_type: MyString
+  land_size: 1
+  address: MyString
+  rooms: 1
+  sale_price: 1
+  suburb: MyString
+  date: 2009-03-04

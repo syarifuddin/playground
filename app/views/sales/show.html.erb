@@ -1,0 +1,38 @@
+<p>
+  <b>Sale type:</b>
+  <%=h @sale.sale_type %>
+</p>
+
+<p>
+  <b>Land size:</b>
+  <%=h @sale.land_size %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @sale.address %>
+</p>
+
+<p>
+  <b>Rooms:</b>
+  <%=h @sale.rooms %>
+</p>
+
+<p>
+  <b>Sale price:</b>
+  <%=h @sale.sale_price %>
+</p>
+
+<p>
+  <b>Suburb:</b>
+  <%=h @sale.suburb %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%=h @sale.date %>
+</p>
+
+
+<%= link_to 'Edit', edit_sale_path(@sale) %> |
+<%= link_to 'Back', sales_path %>

@@ -1,0 +1,32 @@
+<h1>Listing sales</h1>
+
+<table>
+  <tr>
+    <th>Sale type</th>
+    <th>Land size</th>
+    <th>Address</th>
+    <th>Rooms</th>
+    <th>Sale price</th>
+    <th>Suburb</th>
+    <th>Date</th>
+  </tr>
+
+<% for sale in @sales %>
+  <tr>
+    <td><%=h sale.sale_type %></td>
+    <td><%=h sale.land_size %></td>
+    <td><%=h sale.address %></td>
+    <td><%=h sale.rooms %></td>
+    <td><%=h sale.sale_price %></td>
+    <td><%=h sale.suburb %></td>
+    <td><%=h sale.date %></td>
+    <td><%= link_to 'Show', sale %></td>
+    <td><%= link_to 'Edit', edit_sale_path(sale) %></td>
+    <td><%= link_to 'Destroy', sale, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New sale', new_sale_path %>
